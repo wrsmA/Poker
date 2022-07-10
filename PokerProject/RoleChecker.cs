@@ -85,7 +85,7 @@ public sealed class RoleChecker
             {
                 role = Role.StraightFlash;
             }
-            else
+            else if (role.HasFlag(Role.HighCard))
             {
                 role = Role.Flash;
             }
